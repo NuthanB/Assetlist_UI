@@ -1,0 +1,104 @@
+.assets-container {
+  padding: 30px;
+  color: #fff;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+}
+
+.assets-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.file-upload {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #00ffff;
+  cursor: pointer;
+}
+
+.assets-cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.asset-card {
+  flex: 1;
+  min-width: 220px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  font-size: 18px;
+  text-align: center;
+}
+
+.asset-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.assets-table-wrapper {
+  max-height: 400px; /* Scroll height limit */
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: custom scrollbar for WebKit browsers */
+.assets-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.assets-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.assets-table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #00ffff;
+  border-radius: 4px;
+}
+
+.assets-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.assets-table th,
+.assets-table td {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.assets-table th {
+  background-color: #222;
+  color: #00ffff;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.assets-table td {
+  color: #eee;
+}
+
+.assets-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

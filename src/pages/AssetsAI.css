@@ -1,0 +1,39 @@
+.ai-container {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+  }
+  
+  .ai-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #00ffff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    max-width: 500px;
+  }
+  
+  .ai-card h2 {
+    font-size: 32px;
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #00ffff;
+  }
+  
+  .ai-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #eee;
+  }
+  
+  .ai-hint {
+    margin-top: 10px;
+    font-style: italic;
+    color: #bbbbbb;
+  }
+  

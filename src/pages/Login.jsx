@@ -11,7 +11,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:5003/api/auth/login', {
+      const res = await axios.post('https://assestlist-server.vercel.app/api/auth/login', {
         username,
         password
       });

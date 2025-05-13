@@ -6,7 +6,7 @@ export default function AssetsList() {
   const [assets, setAssets] = useState([]);
 
   const fetchAssets = async () => {
-    const res = await axios.get('http://localhost:5003/api/assets');
+    const res = await axios.get('https://assestlist-server.vercel.app/api/assets');
     setAssets(res.data);
   };
 
@@ -14,8 +14,9 @@ export default function AssetsList() {
     const file = e.target.files[0];
     const formData = new FormData();
     formData.append('file', file);
+    
 
-    await axios.post('http://localhost:5003/api/assets/upload', formData);
+    await axios.post('https://assestlist-server.vercel.app/api/assets/upload', formData);
     fetchAssets();
   };
 
